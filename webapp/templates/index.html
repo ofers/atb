@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>At-Bay Project</title>
+    </head>
+    <body>
+        <h1>Hello, !</h1>
+<table>
+{% for user in users %}
+    <option value="{{ user.id }}">{{ user.first_name }}, {{ user.id }}</option>
+{% endfor %}
+</table>
+    </body>
+</html>
