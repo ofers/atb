@@ -4,10 +4,26 @@
     </head>
     <body>
         <h1>Hello, !</h1>
-<table>
+<table border="1">
+
+  <tr>
+    <th>Index #</th>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Personal Id</th>
+    <th>Department</th>
 {% for user in users %}
-    <option value="{{ user.id }}">{{ user.first_name }}, {{ user.id }}</option>
+  </tr>
+    <tr>
+    <th>{{ user.id }}</th>
+    <th>{{ user.first_name }}</th>
+    <th>{{ user.last_name }}</th>
+    <th>{{ user.pid }}</th>
+    <th>{{ user.department }}</th>
+    <th>{<a href="/{{ user.id }}/delete">delete</a></th>
+  </tr>
 {% endfor %}
+
 </table>
     </body>
 </html>

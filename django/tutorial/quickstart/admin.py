@@ -1,9 +1,8 @@
 from django.contrib import admin
-from rest_framework import serializers
 
-from .models import User
-
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['first_name', 'last_name', 'pid', 'department']
+# class User(admin.Model):
+#     first_name = admin.TextField()
+#     last_name = admin.TextField()
+#     pid = admin.TextField(unique=True, max_length=255)
+#     department = admin.TextField()
+#     gaga = admin.TextField()
