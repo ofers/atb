@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>At-Bay Project</title>
+    </head>
+    <body>
+        <h1>Hello, !</h1>
+<table border="1">
+
+  <tr>
+    <th>Index #</th>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Personal Id</th>
+    <th>Department</th>
+{% for user in users %}
+  </tr>
+    <tr>
+    <th>{{ user.id }}</th>
+    <th>{{ user.first_name }}</th>
+    <th>{{ user.last_name }}</th>
+    <th>{{ user.emp_no }}</th>
+    <th>{{ user.department }}</th>
+    <th>{<a href="/{{ user.id }}/delete">Delete</a></th>
+    <th>{<a href="/{{ user.id }}/edit">Edit</a></th>
+  </tr>
+{% endfor %}
+
+</table>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>At-Bay Project</title>
+    </head>
+    <body>
+        <h1>Hello, {{ emp.first_name }} !</h1>
+
+{% block content %}
+    <h1>edit/add</h1>
+  </tr>
+    <tr>
+    <th>{{ emp.id }}</th>
+    <th>{{ emp.first_name }}</th>
+    <th>{{ emp.last_name }}</th>
+    <th>{{ emp.emp_no }}</th>
+    <th>{{ emp.department }}</th>
+  </tr>
+{% endblock %}
+
+    </body>
+</html>
