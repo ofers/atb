@@ -18,9 +18,10 @@
     <th>{{ user.id }}</th>
     <th>{{ user.first_name }}</th>
     <th>{{ user.last_name }}</th>
-    <th>{{ user.pid }}</th>
+    <th>{{ user.emp_no }}</th>
     <th>{{ user.department }}</th>
-    <th>{<a href="/{{ user.id }}/delete">delete</a></th>
+    <th>{<a href="/{{ user.id }}/delete">Delete</a></th>
+    <th>{<a href="/user/{{ user.id }}">Edit</a></th>
   </tr>
 {% endfor %}
 
