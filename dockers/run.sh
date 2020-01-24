@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker stack deploy -c mysql.yml mysql
+sudo docker stack deploy -c atbapp.yml atbapp
