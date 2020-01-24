@@ -1,7 +1,5 @@
 Click==7.0
 configparser==4.0.2
-Django==2.2.9
-djangorestframework==3.11.0
 dnspython==1.16.0
 Flask==1.1.1
 itsdangerous==1.1.0
