@@ -4,7 +4,7 @@ from mysql.connector import errorcode, Error
 config = {
     'user': 'root',
     'password': '1q2w3e',
-    'host': '127.0.0.1',
+    'host': '192.168.181.129',
     'raise_on_warnings': True,
     # 'OPTIONS': {
     #     'charset': 'utf8mb4',
