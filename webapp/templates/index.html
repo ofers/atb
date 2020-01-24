@@ -4,12 +4,13 @@
     </head>
     <body>
         <h1>Hello, !</h1>
+        <a href="/add">Add</a>
 <table border="1">
 
   <tr>
     <th>Index #</th>
-    <th>Firstname</th>
-    <th>Lastname</th> 
+    <th>First Name</th>
+    <th>Last Name</th>
     <th>Personal Id</th>
     <th>Department</th>
 {% for user in users %}
@@ -20,8 +21,8 @@
     <th>{{ user.last_name }}</th>
     <th>{{ user.emp_no }}</th>
     <th>{{ user.department }}</th>
-    <th>{<a href="/{{ user.id }}/delete">Delete</a></th>
-    <th>{<a href="/user/{{ user.id }}">Edit</a></th>
+    <th><a href="/{{ user.id }}/delete">Delete</a></th>
+    <th><a href="/edit/{{ user.id }}">Edit</a></th>
   </tr>
 {% endfor %}
 

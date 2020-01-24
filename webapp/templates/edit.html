@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>At-Bay Project</title>
+    </head>
+    <body>
+        <h1>Hello! {{ emp.first_name }} {{ emp.last_name }} </h1>
+        <form action="/editpost" method="post">
+            First name: <input type="text" name="first_name" required value="{{ emp.first_name }}"><br>
+            Last Name: <input type="text" name="last_name" required value="{{ emp.last_name }}"><br>
+            Employee Number: <input type="number" name="emp_no" required value="{{ emp.emp_no }}"><br>
+            Department: <input type="text" name="department" required value="{{ emp.department }}"><br>
+            <input type="hidden" name="id" required value="{{ emp.id }}"><br>
+            <input type="submit" value="Edit"><br>
+        </form>
+    </body>
+</html>

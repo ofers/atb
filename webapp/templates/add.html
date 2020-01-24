@@ -4,12 +4,12 @@
     </head>
     <body>
         <h1>Hello!</h1>
-        <form action="/add2" method="post">
-            <input type="text" name="first_name"/>
-            <input type="text" name="last_name"/>
-            <input type="number" name="emp_no"/>
-            <input type="text" name="department"/>
-            <input type="submit" value="Add"/>
+        <form action="/addpost" method="post">
+            First name: <input type="text" name="first_name" required><br>
+            Last Name: <input type="text" name="last_name" required><br>
+            Employee Number: <input type="number" name="emp_no" required><br>
+            Department: <input type="text" name="department" required><br>
+            <input type="submit" value="Add"><br>
         </form>
     </body>
 </html>
