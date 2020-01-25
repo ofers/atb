@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker stack deploy -c atbapp.yml atbapp --with-registry-auth
+sudo docker stack deploy -c atbapp.yml atbapp
